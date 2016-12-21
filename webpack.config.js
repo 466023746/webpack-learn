@@ -77,6 +77,8 @@ var configOne = {
             names: ['vendor', 'manifest'],
             // minChunks: Infinity
         }),
+        // 按文件命名可以解决venfor file long term cache
+        // 也可以使用dllPlugin
         new webpack.NamedModulesPlugin()
         // new WebpackMd5Hash(),
         // new ManifestPlugin(),
